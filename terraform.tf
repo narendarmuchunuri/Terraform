@@ -1,9 +1,9 @@
 resource "local_file" "pet" {
-filename = "var.filename"
-content = "var.content"
+filename = "pets.txt"
+content = "My cat is MR.Cat"
 }
 resource "random_pet" "mypet" {
-prefix = "var.prefix"
-separator = "var.separator"
-length = "var.length"
+prefix = "MR"
+separator = "."
+length = "1"
 }
